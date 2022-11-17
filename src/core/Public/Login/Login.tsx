@@ -36,7 +36,6 @@ function Login(props: Props): ReactElement {
         navigate("/auth/home");
       } else {
         toast.error(loginres?.data?.detail);
-        // toast.error(loginres)
       }
     },
     [loginUser, navigate]
